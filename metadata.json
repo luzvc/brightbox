@@ -1,0 +1,33 @@
+{
+  "name": "brightbox",
+  "description": "Installs/Configures Brightbox's Ruby",
+  "long_description": "Brightbox Cookbook\n==================\n\nThis cookbook aims to install Brightbox's Ruby and sets it as the\ndefault Ruby on the system.\n\nRequirements\n------------\n#### packages\n- `apt`\n\nAttributes\n----------\nTODO: List you cookbook attributes here.\n\ne.g.\n#### brightbox::default\n<table>\n  <tr>\n    <th>Key</th>\n    <th>Type</th>\n    <th>Description</th>\n    <th>Default</th>\n  </tr>\n  <tr>\n    <td><tt>['brightbox']['bacon']</tt></td>\n    <td>Boolean</td>\n    <td>whether to include bacon</td>\n    <td><tt>true</tt></td>\n  </tr>\n</table>\n\nUsage\n-----\n#### brightbox::default\nTODO: Write usage instructions for each cookbook.\n\ne.g.\nJust include `brightbox` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[brightbox]\"\n  ]\n}\n```\n\nContributing\n------------\nTODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.\n\ne.g.\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write you change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: TODO: List authors\n",
+  "maintainer": "LUZ",
+  "maintainer_email": "tech@luz.vc",
+  "license": "MIT",
+  "platforms": {
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0",
+    "build-essential": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.2.0",
+  "source_url": "",
+  "issues_url": ""
+}
