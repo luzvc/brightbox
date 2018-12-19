@@ -33,16 +33,3 @@ packages.each do |name|
     action :install
   end
 end
-
-node['brightbox']['gems'].each do |gem|
-  gem_package gem do
-    gem_binary "/usr/bin/gem"
-    options "--force"
-    action :install
-  end
-end
-
-execute "gem regenerate_binstubs" do
-  action :nothing
-  subscribes :run, resources('gem_package[rubygems-bundler]')
-end
