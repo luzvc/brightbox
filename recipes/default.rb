@@ -25,7 +25,7 @@ cookbook_file "/etc/gemrc" do
   mode   "0644"
 end
 
-packages = ["build-essential", "ruby#{node['brightbox']['version']}"]
+packages = ["build-essential", "ruby#{node['brightbox']['version']}", "bundler"]
 packages << "ruby#{node['brightbox']['version']}-dev"
 packages << "ruby-switch"
 packages.each do |name|
