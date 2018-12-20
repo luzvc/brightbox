@@ -25,11 +25,15 @@ cookbook_file "/etc/gemrc" do
   mode   "0644"
 end
 
-packages = ["build-essential", "ruby#{node['brightbox']['version']}", "bundler"]
+packages = ["build-essential", "ruby#{node['brightbox']['version']}"]
 packages << "ruby#{node['brightbox']['version']}-dev"
 packages << "ruby-switch"
 packages.each do |name|
   apt_package name do
     action :install
   end
+end
+
+gem_package "bundler" do
+  gem_binary "/usr/bin/gem"
 end
