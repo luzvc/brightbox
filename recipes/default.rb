@@ -34,6 +34,8 @@ packages.each do |name|
   end
 end
 
+execute "gem update --system"
+
 gem_package "bundler" do
   gem_binary "/usr/bin/gem"
 end
