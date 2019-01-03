@@ -34,7 +34,9 @@ packages.each do |name|
   end
 end
 
-execute "gem update --system"
+execute "gem update --system" do
+  environment "RAILS_ENV" => node['brightbox']['environment']
+end
 
 gem_package "bundler" do
   gem_binary "/usr/bin/gem"
