@@ -40,5 +40,4 @@ end
 
 gem_package "bundler" do
   gem_binary "/usr/bin/gem"
-  environment "PATH" => "/usr/bin:$PATH"
 end
