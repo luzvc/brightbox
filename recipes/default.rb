@@ -19,7 +19,7 @@ apt_repository "brightbox-ruby-ng-#{node['lsb']['codename']}" do
   notifies     :run, "execute[apt-get update]", :immediately
 end
 
-cookbook_file "/etc/gemrc" do
+cookbook_file "/root/.gemrc" do
   action :create_if_missing
   source "gemrc"
   mode   "0644"
