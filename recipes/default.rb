@@ -38,6 +38,6 @@ execute "gem update --system" do
   environment "PATH" => "/usr/bin:$PATH"
 end
 
-gem_package "bundler" do
-  gem_binary "/usr/bin/gem"
+execute "/usr/bin/gem install bundler -q --no-document" do
+  environment "PATH" => "/usr/bin:$PATH"
 end
